@@ -1,3 +1,4 @@
+
 class Node:
     def __init__(self, value=None, next_node=None):
         # the value at this linked list node
@@ -45,17 +46,4 @@ class LinkedList:
 
     def reverse_list(self):
         # TO BE COMPLETED
-        prev = None  # Keeps track of previous node
-        cur = self.head  # Initial head of the list, moves along as we go through the list
-        while cur:  # while current node is not equal to null...
-            nxt = cur.next_node  # goes to the next node before changing the pointer
-            cur.next_node = prev  # Flips the pointers to the previous node
-            prev = cur  # updates the previous node to the current node
-            cur = nxt  # the current node should be updated to the next one its going to
-        self.head = prev
-
-    # A -> B -> C -> D -> Null(0) flip into...
-    # D -> C -> B -> A -> 0
-
-    # A <- B <- C <- D <- 0 We're flipping the pointers
-    # Iterate through the list while keeping track going through the node
+        pass
